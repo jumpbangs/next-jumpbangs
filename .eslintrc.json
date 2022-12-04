@@ -1,0 +1,35 @@
+{
+  "extends": "next",
+  "rules": {
+    "no-console": [
+      "error",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "semi": [2, "always"],
+    "eqeqeq": [2, "always"],
+    "eol-last": [2, "always"],
+    "no-unused-vars": 1,
+    "no-unreachable": 2,
+    "no-multi-spaces": 2,
+    "space-before-blocks": 2,
+    "newline-before-return": 2,
+    "no-unexpected-multiline": 2,
+    "linebreak-style": ["error", "unix"],
+    "react-hooks/exhaustive-deps": "warn",
+    "react/prop-types": ["error", { "ignore": ["navigation"] }],
+    "require-jsdoc": [
+      "error",
+      {
+        "require": {
+          "MethodDefinition": false,
+          "ClassDeclaration": false,
+          "FunctionExpression": false,
+          "FunctionDeclaration": true,
+          "ArrowFunctionExpression": true
+        }
+      }
+    ]
+  }
+}
