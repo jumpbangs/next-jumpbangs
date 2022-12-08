@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@utils/*": ["utils/*"],
+      "@assets/*": ["assets/*"],
+      "@common/*": ["components/common/*"]
+    }
   }
 }
